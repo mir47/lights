@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_FadeSpeed_entries">
+        <item>Slow</item>
+        <item>Medium</item>
+        <item>Fast</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="pref_FadeSpeed_values">
+        <item>126</item>
+        <item>123</item>
+        <item>121</item>
+        <item>120</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--
+    TODO add defaults for sleep_time and sleep_brightness
+-->
+
+    <PreferenceCategory
+        android:title="Lights">
+        <ListPreference
+            android:key="pref_l_fadeSpeed"
+            android:title="Fade Speed"
+            android:summary="xxx"
+            android:dialogTitle="Fade Speed"
+            android:entries="@array/pref_FadeSpeed_entries"
+            android:entryValues="@array/pref_FadeSpeed_values"
+            android:defaultValue="123" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Network">
+        <CheckBoxPreference
+            android:key="pref_cb_AllowChanges"
+            android:title="Server settings"
+            android:summaryOn="Uncheck to disallow changes"
+            android:summaryOff="Check to allow changes"/>
+        <EditTextPreference
+            android:key="pref_et_serverIP"
+            android:title="IP Address"
+            android:dependency="pref_cb_AllowChanges"
+            android:summary="x.x.x.x"
+            android:defaultValue="10.0.0.11"
+            android:dialogTitle="Server IP Address"
+            android:inputType="phone"
+            android:digits="1234567890."/>
+        <EditTextPreference
+            android:key="pref_et_serverPort"
+            android:title="Port"
+            android:dependency="pref_cb_AllowChanges"
+            android:summary="xxxx"
+            android:defaultValue="5011"
+            android:dialogTitle="Server Port"
+            android:inputType="phone"
+            android:digits="1234567890"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>

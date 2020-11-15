@@ -1,0 +1,18 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_default"
+        android:title="@string/action_default"
+        android:icon="@mipmap/ic_action_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_save"
+        android:title="@string/action_accept"
+        android:icon="@mipmap/ic_action_accept"
+        android:orderInCategory="200"
+        android:showAsAction="always" />
+
+</menu>
